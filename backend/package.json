@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-satya",
+  "version": "2.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyam Gupta",
+  "license": "ISC"
+}
