@@ -9,6 +9,7 @@ export default {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      quarternary:'exo'
     },
     container: {
       padding: {
