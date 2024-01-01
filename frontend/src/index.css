@@ -14,7 +14,8 @@
   background: url('./assets/img_about.png');
   background-repeat: no-repeat;
   background-size: contain;
-  flex: 1;
+  position: relative;
+  top:100px;
 }
 .btn:hover {
   background-color: rgb(0 0 0 / 0.20);
@@ -46,7 +47,7 @@
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-primary font-semibold text-[26px] max-[500px]:text-[22px] mb-6 leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;

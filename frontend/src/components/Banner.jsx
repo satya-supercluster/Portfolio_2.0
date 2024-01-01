@@ -8,7 +8,7 @@ import {fadeIn} from '../motion'
 import {motion} from 'framer-motion';
 const Banner = () => {
   return (
-    <section className='min-h-[85vh] lg:min-h-screen flex items-center' id='home' >
+    <section className='min-h-screen flex items-center' id='home' >
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-12'>
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -60,7 +60,7 @@ const Banner = () => {
                 once:false,
                 amount:0.7
               }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0 text-md sm:text-lg'>
+              className='mb-8 max-w-lg mx-auto lg:mx-0 sm:text-lg'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi tenetur ipsam facere placeat quod esse, saepe repellat. Est, accusamus, unde laudantium saepe recusandae dolore eveniet non minus obcaecati doloribus nihil distinctio!
               </motion.p>
               <motion.div
