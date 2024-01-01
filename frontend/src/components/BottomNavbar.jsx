@@ -30,6 +30,7 @@ const BottomNavbar = () => {
           activeClass='active'
           smooth={true}
           spy={true}
+          // offset={-40}
           className='cursor-pointer w-[50px] h-[50px] flex items-center justify-center' >
             <SchoolOutlinedIcon></SchoolOutlinedIcon>
           </Link>
