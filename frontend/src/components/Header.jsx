@@ -4,7 +4,7 @@ import { Link } from '@mui/material';
 import {TypeAnimation} from 'react-type-animation';
 const Header = () => {
   return (
-    <header className='py-2 max-[500px]:text-[1rem] sticky top-0'>
+    <header className='py-2 max-[500px]:text-[1rem] w-screen fixed top-0 z-10'>
       <div className='container mx-auto '>
         <div className='flex justify-between items-center backdrop-blur-2xl px-2 py-1 rounded-full bg-black/20'>
           <Link to="home">
