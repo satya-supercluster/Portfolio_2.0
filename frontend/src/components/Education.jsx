@@ -6,7 +6,18 @@ import manit from '../assets/manit1.jpg'
 const Education = () => {
   return (
     <div className='section' id='education' >
-      <div className='container mx-auto max-[960px]:mt-10'>
+      <div className='container mx-auto mt-10 md:mt-10 md:pt-5'>
+        <motion.h2 
+        variants={fadeIn('up',0.3)}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{
+          once:false,
+          amount:0.7
+        }}
+        className='h2 text-accent font-extrabold text-center'>
+          EDUCATION
+        </motion.h2>
         <div className='flex flex-col gap-y-3'>
           <motion.div 
           variants={fadeIn('left',0.3)}
