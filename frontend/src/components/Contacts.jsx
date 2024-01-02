@@ -4,8 +4,8 @@ import {fadeIn} from '../motion'
 const Contacts = () => {
   return (
     <section className='py-16 ' id='contacts' >
-      <div className='container mx-auto'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 lg:h-[80vh]'>
+      <div className='container mx-auto  max-[960px]:mt-10 mb-[3rem]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 lg:h-screen'>
           <div className='flex flex-col justify-center items-left'>
             <motion.h4 
             variants={fadeIn('up',0.3)}
@@ -26,7 +26,7 @@ const Contacts = () => {
               once:false,
               amount:0.7
             }}
-            className='text-[45px] lg:text-[90px] leading-none lg:mb-12'>Let's work <br /> together!</motion.h2>
+            className='text-[45px] lg:text-[90px] leading-none lg:mb-12'>Shoot Me<br /> A Message!</motion.h2>
           </div>
           <motion.form 
           variants={fadeIn('up',0.4)}

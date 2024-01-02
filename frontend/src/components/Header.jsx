@@ -1,5 +1,4 @@
 import React from 'react'
-import MoveDownIcon from '@mui/icons-material/MoveDown';
 import { Link } from '@mui/material';
 import {TypeAnimation} from 'react-type-animation';
 const Header = () => {
@@ -14,7 +13,7 @@ const Header = () => {
           className=' font-primary px-2  font-extrabold text-gradient'
           />
             </Link>
-          <button className='btn btn-sm'>work</button>
+          <a href='https://satya-supercluster.github.io/Portfolio/' className='flex text-gradient text-xl font-bold justify-center items-center btn btn-sm'>1.O</a>
         </div>
       </div>
     </header>

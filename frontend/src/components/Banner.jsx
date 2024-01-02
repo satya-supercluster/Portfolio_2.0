@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/me21.png'
+import {Link} from 'react-scroll'
 import {TypeAnimation} from 'react-type-animation';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -36,8 +37,10 @@ const Banner = () => {
             className='mt-3 mb-3 text-[25px] lg:text-[55px] font-secondary font-semibold uppercase leading-[1] '>
             <span className='mr-4'>I am a</span>
             <TypeAnimation
-            preRenderFirstString={true}
+            preRenderFirstString={false}
               sequence={[
+                'Coder',
+                1000,
                 'Web Developer',
                 1000,
                 'Competitive Programmer',
@@ -61,7 +64,9 @@ const Banner = () => {
                 amount:0.7
               }}
               className='mb-8 max-w-lg mx-auto lg:mx-0 sm:text-lg'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi tenetur ipsam facere placeat quod esse, saepe repellat. Est, accusamus, unde laudantium saepe recusandae dolore eveniet non minus obcaecati doloribus nihil distinctio!
+                Welcome to my Portfolio Website. <br />
+                I'm passionate about creating digital experiences and I want to use technology to help people's lives more fulfilling. <br />
+                You can find me on LinkedIn, download my resume or shoot me an email.
               </motion.p>
               <motion.div
               variants={fadeIn('up',0.6)}
@@ -72,9 +77,13 @@ const Banner = () => {
                 amount:0.7
               }} 
               className='flex mx-w-max gap-x-6 justify-center items-center mb-5 mx-auto lg:justify-start'>
-                <button className='btn btn-lg'>LinkedIn</button>
+                <Link to='contacts' 
+                activeClass='active'
+                smooth={true}
+                spy={true}
+                className=' cursor-pointer btn btn-lg items-center flex justify-center'>Hire Me</Link>
                 <a href="#" className='text-gradient btn-link'>
-                  My Portfolio
+                  My Resume
                 </a>
               </motion.div>
               <motion.div
@@ -86,13 +95,13 @@ const Banner = () => {
                 amount:0.7
               }}
               className='flex font-extrabold text-[50px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-                <a href="">
+                <a href="https://github.com/satya-supercluster">
                   <GitHubIcon></GitHubIcon>
                 </a>
                 <a href="">
                 <LinkedInIcon></LinkedInIcon>
                 </a>
-                <a href="">
+                <a href="https://codeforces.com/profile/supercluster">
                   <CodeIcon></CodeIcon>
                 </a>
               </motion.div>

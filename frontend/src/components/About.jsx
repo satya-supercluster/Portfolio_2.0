@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import {Link} from 'react-scroll'
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../motion";
@@ -31,14 +32,12 @@ const About = () => {
             {/* text */}
             <h2 className="h2 font-extrabold text-accent">About Me.</h2>
             <h3 className="h3 mb-3 font-bold leading-[1.2]">
-              I'm a Full Stack Developer with no experience and also a
+              I'm a Developer with brief knowledge of both frontend and Backend and also a
               Competitive Programmer
             </h3>
-            <p className="leading-[1] font-quarternary mb-5">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
-              atque fugiat id dolorum, corporis, laborum voluptatibus,
-              voluptates velit numquam sit alias consectetur tempora possimus
-              eligendi ipsum amet ex? Doloremque aliquid illo saepe?
+            <p className="leading-[1.3] font-quarternary mb-5">
+            I'm an enthusiastic developer from Lucknow, the capital of state Uttar Pradesh, I always find ways to learn new things related to the tech and development. I'm very passionate about improving my coding skills & developing applications and websites.Working for myself to improve my coding skills.
+            <br />Love to code!!!
             </p>
             <div className="flex gap-x-4 lg:gap-x-7 mb-8 text-center ">
               <div>
@@ -73,7 +72,11 @@ const About = () => {
               </div>
             </div>
             <div>
-              <button className="btn btn-lg">Contact Me</button>
+              <Link to='contacts' 
+                activeClass='active'
+                smooth={true}
+                spy={true}
+              className="btn py-4 btn-lg cursor-pointer">Contact Me</Link>
             </div>
           </motion.div>
         </div>
