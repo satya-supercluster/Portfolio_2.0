@@ -3,7 +3,7 @@ import image from '../assets/me21.png'
 import {TypeAnimation} from 'react-type-animation';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CodeIcon from '@mui/icons-material/Code';
+import CodeIcon from '@mui/icons-material/BarChart';
 import {fadeIn} from '../motion'
 import {motion} from 'framer-motion';
 const Banner = () => {

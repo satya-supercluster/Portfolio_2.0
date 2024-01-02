@@ -9,10 +9,10 @@ import TechStack from './components/TechStack'
 import Contacts from './components/Contacts'
 const App = () => {
   return (
-    <div className=' bg-gradient-to-r from-blue-700 to-violet-800  h-[4000px] overflow-hidden'>
+    <div className=' bg-gradient-to-r from-blue-700 to-violet-800 overflow-hidden'>
       <Header></Header>
       <div className="mt-10">
-      <Banner ></Banner>
+      <Banner></Banner>
       <Navbar></Navbar>
       <About></About>
       <Education></Education>

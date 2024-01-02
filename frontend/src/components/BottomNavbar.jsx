@@ -7,7 +7,7 @@ import LocalFloristOutlinedIcon from '@mui/icons-material/LocalFloristOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
 const BottomNavbar = () => {
   return (
-    <nav className='fixed bottom-3 lg:bottom-4 w-full overflow-hidden z-50'>
+    <nav className='fixed bottom-3 lg:bottom-4 w-full overflow-hidden z-10'>
       <div className='container mx-auto'>
         <div className='w-full bg-black/15 h-[60px] sm:h-[60px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-1 flex justify-between items-center text-2xl text-white/45 '>
           <Link to='home' 
