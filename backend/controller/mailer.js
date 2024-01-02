@@ -27,8 +27,8 @@ const mailer = async (req,res)=>{
     const mailDetailsForMe = {
         from: email,
         to: process.env.EMAIL,
-        subject: `${name.trim().split(' ')[0]} Shoot message to you From Portfolio`,
-        text: message
+        subject: `${name.trim().split(' ')[0]} Shoot a message From Portfolio`,
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
     try{
         transporter.sendMail(mailDetailsForMe);

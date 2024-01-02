@@ -16,7 +16,8 @@ const Footer = () => {
         <a href="https://twitter.com/SUPERCLUSTER_G"><TwitterIcon></TwitterIcon></a>
         </div>
         <p className=' font-quarternary text-sm font-light text-white/60 text-center'>
-          Copyright © 2024 by Satyam Gupta <br /> All right reserved.
+          Copyright © 2024 by Satyam Gupta <br /> All right reserved. <br />
+          Made in ❤️ with code
         </p>
       </div>
     </footer>
