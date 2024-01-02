@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(bodyparser.urlencoded({extended:true}));
 
 // Route
-const mailer = require('./routes');
+const mailer = require('./routes/index');
 
 // Listening the server
 app.listen(process.env.PORT,(err)=>{
