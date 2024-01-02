@@ -43,7 +43,7 @@ const About = () => {
             <div className="flex gap-x-4 lg:gap-x-7 mb-8 text-center ">
               <div>
                 <div className="text-[40px] max-[500px]:text-[25px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={5} duration={1} /> : null}
+                  {inView ? <CountUp start={0} end={5} duration={1} /> : 0}
                   +
                 </div>
                 <div className="font-primary text-sm max-[500px]:text-[10px] font-bold  tracking-[2px]">
@@ -63,7 +63,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] max-[500px]:text-[25px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={1200} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={1200} duration={2} /> : 0}
                   +
                 </div>
                 <div className="font-primary text-sm max-[500px]:text-[10px] font-bold tracking-[2px]">
