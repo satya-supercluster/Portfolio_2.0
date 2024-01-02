@@ -18,7 +18,7 @@ const Contacts = () => {
       setError(true);
       return;
     }
-    const res=await fetch('http://localhost:8080/api/mailer',{
+    const res=await fetch('https://portfolio-f2xa.onrender.com/api/mailer',{
       method:'POST',
       headers:{
         "Content-Type":"application/json",

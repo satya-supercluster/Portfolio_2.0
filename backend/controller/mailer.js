@@ -25,7 +25,7 @@ const mailer = async (req,res)=>{
         res.status(500).send({success:false});
     }
     const mailDetailsForMe = {
-        from: email,
+        from:  process.env.SEMAIL,
         to: process.env.EMAIL,
         subject: `${name.trim().split(' ')[0]} Shoot a message From Portfolio`,
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
