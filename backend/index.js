@@ -18,6 +18,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 
 // Route
 const mailer = require('./routes/index');
+app.use('/api',mailer);
 
 // Listening the server
 app.listen(process.env.PORT,(err)=>{
