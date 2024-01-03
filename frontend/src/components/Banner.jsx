@@ -82,7 +82,7 @@ const Banner = () => {
                 smooth={true}
                 spy={true}
                 className=' cursor-pointer btn btn-lg items-center flex justify-center'>Hire Me</Link>
-                <a href="../assets/resume.pdf"
+                <a href="https://drive.google.com/file/d/1fTHuLAHpmJ6LCqaZFgYaGHmbNySDHkbQ/view?usp=sharing"
                 download
                 className='text-gradient btn-link'>
                   My Resume
