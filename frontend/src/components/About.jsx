@@ -39,7 +39,7 @@ const About = () => {
             I'm an enthusiastic developer from Lucknow, the capital of state Uttar Pradesh, I always find ways to learn new things related to the tech and development. I'm very passionate about improving my coding skills & developing applications and websites.Working for myself to improve my coding skills.
             <br />Love to code!!!
             </p>
-            <div className="flex gap-x-4 lg:gap-x-7 mb-8 text-center ">
+            <div className="flex gap-x-4 lg:gap-x-7 mb-8 text-center max-[960px]:justify-center ">
               <div>
                 <div className="text-[40px] max-[500px]:text-[25px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={5} duration={1} /> : 0}
