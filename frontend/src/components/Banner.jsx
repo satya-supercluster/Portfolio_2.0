@@ -100,7 +100,7 @@ const Banner = () => {
                 <a href="https://github.com/satya-supercluster">
                   <GitHubIcon></GitHubIcon>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/satya-supercluster/">
                 <LinkedInIcon></LinkedInIcon>
                 </a>
                 <a href="https://codeforces.com/profile/supercluster">

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className='relative bg-black py-1 z-10 flex flex-col'>
         <div className='flex justify-center items-center gap-x-5 py-2 text-white/80'>
         <a href="https://github.com/satya-supercluster"><GitHubIcon></GitHubIcon></a>
-        <a href=""><LinkedInIcon></LinkedInIcon></a>
+        <a href="https://www.linkedin.com/in/satya-supercluster/"><LinkedInIcon></LinkedInIcon></a>
         <a href="https://www.codechef.com/users/supercluster"><CodeIcon></CodeIcon></a>
         <a href="https://codeforces.com/profile/supercluster"><BarChartIcon></BarChartIcon></a>
         <a href="https://twitter.com/SUPERCLUSTER_G"><TwitterIcon></TwitterIcon></a>
