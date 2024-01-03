@@ -12,6 +12,8 @@ import mg from '../assets/mongo.svg'
 import rd from '../assets/redux.svg'
 import ts from '../assets/typescript.svg'
 import ft from '../assets/flutter.svg'
+import cpp from '../assets/cpp.svg'
+import nxt from '../assets/nextjs.svg'
 const TechStack = () => {
   return (
     <div className='section lg:h-screen' id='techstack' >
@@ -130,6 +132,22 @@ const TechStack = () => {
                       alt="ft" />
                     </div>
                     <p className='text-sm'>FLUTTER</p>
+                  </div>
+                  <div className='flex flex-col justify-center items-center'>
+                    <div>
+                      <img src={nxt}
+                      className='h-[60px]'
+                      alt="nextjs" />
+                    </div>
+                    <p className='text-sm'>NEXTJS</p>
+                  </div>
+                  <div className='flex flex-col justify-center items-center'>
+                    <div>
+                      <img src={cpp}
+                      className='h-[60px]'
+                      alt="cpp" />
+                    </div>
+                    <p className='text-sm'>C++</p>
                   </div>
               </motion.div>
             </div>
