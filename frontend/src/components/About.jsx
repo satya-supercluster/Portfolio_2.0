@@ -28,7 +28,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once:false, amount: 0.3}}
-          className="flex-1 ">
+          className="flex-1 text-center lg:text-left">
             {/* text */}
             <h2 className="h2 font-extrabold text-accent">About Me.</h2>
             <h3 className="h3 mb-3 font-bold leading-[1.2]">

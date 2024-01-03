@@ -16,7 +16,7 @@ const mailer = async (req,res)=>{
         from: process.env.SEMAIL,
         to: email,
         subject: 'Responce From Satyam',
-        text: `Hey ${name.trim().split(' ')[0]}\n Thanks For Shooting your valuable message to me. I'll reply you as soon as possible.`
+        text: `Hey ${name.trim().split(' ')[0]} \n Thanks For Shooting your valuable message to me. I'll reply you as soon as possible.`
     };
     try{
         transporter.sendMail(mailDetails);
@@ -28,7 +28,7 @@ const mailer = async (req,res)=>{
         from:  process.env.SEMAIL,
         to: process.env.EMAIL,
         subject: `${name.trim().split(' ')[0]} Shoot a message From Portfolio`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+        text: `Name: ${name} \n Email: ${email} \n Message: ${message}`
     };
     try{
         transporter.sendMail(mailDetailsForMe);

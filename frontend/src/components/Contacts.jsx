@@ -18,19 +18,20 @@ const Contacts = () => {
       setError(true);
       return;
     }
-    const res=await fetch('https://portfolio-f2xa.onrender.com/api/mailer',{
-      method:'POST',
-      headers:{
-        "Content-Type":"application/json",
-      },
-      body:JSON.stringify(data)
-    });
+    // const res=await fetch('https://portfolio-f2xa.onrender.com/api/mailer',{
+    //   method:'POST',
+    //   headers:{
+    //     "Content-Type":"application/json",
+    //   },
+    //   body:JSON.stringify(data)
+    // });
+    const res=true;
     if(res){
       console.log(res);
       setSent(true);
     }
     else{
-      console.log('failure')
+      setError(true);
     }
   }
   useEffect(()=>{
