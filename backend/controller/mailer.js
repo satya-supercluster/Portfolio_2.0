@@ -22,7 +22,7 @@ const mailer = async (req, res) => {
     subject: "Responce From Satyam",
     text: `Hey ${
       name.trim().split(" ")[0]
-    } \n Thanks For Shooting your valuable message to me. I'll reply you as soon as possible.`,
+    } Thanks For Shooting your valuable message to me. I'll reply you as soon as possible.`,
   };
   try {
     transporter.sendMail(mailDetails);
