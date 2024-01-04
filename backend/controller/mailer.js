@@ -5,13 +5,17 @@ async function sendMail() {}
 const mailer = async (req, res) => {
   const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "gmail",
     port: 465,
     secure: true,
+    secureConnection:false,
     auth: {
       user: process.env.SEMAIL,
       pass: process.env.PASSWORD,
     },
+    tls:{
+      rejectUnauthorized:true
+    }
   });
   const mailDetails = {
     from: process.env.SEMAIL,
