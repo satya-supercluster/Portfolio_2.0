@@ -25,7 +25,7 @@ const Contacts = () => {
       },
       body:JSON.stringify(data)
     });
-    if(res&&(res.success===true)){
+    if(res){
       setSent(true);
     }
     else{

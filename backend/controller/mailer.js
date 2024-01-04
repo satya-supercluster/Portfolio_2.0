@@ -38,9 +38,9 @@ const mailer = async (req, res) => {
   try {
     transporter.sendMail(mailDetailsForMe);
   } catch {
-    res.status(500).send({ success: false });
+    res.status(500).json({ success: false });
   }
-  res.status(200).send({ success: true });
+  res.status(200).json({ success: true });
 };
 
 module.exports = mailer;
