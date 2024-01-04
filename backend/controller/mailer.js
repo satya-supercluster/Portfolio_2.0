@@ -1,7 +1,5 @@
 const nodemailer = require("nodemailer");
 
-async function sendMail() {}
-
 const mailer = async (req, res) => {
   const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
@@ -19,7 +17,7 @@ const mailer = async (req, res) => {
     }
   });
   const mailDetails = {
-    from: process.env.SEMAIL,
+    from: `${process.env.SEMAIL}`,
     to: email,
     subject: "Responce From Satyam",
     text: `Hey ${
@@ -32,8 +30,8 @@ const mailer = async (req, res) => {
     res.status(500).send({ success: false });
   }
   const mailDetailsForMe = {
-    from: process.env.SEMAIL,
-    to: process.env.EMAIL,
+    from: `${process.env.SEMAIL}`,
+    to: `${process.env.EMAIL}`,
     subject: `${name.trim().split(" ")[0]} Shoot a message From Portfolio`,
     text: `Name: ${name} \n Email: ${email} \n Message: ${message}`,
   };
