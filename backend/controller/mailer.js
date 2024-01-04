@@ -5,7 +5,8 @@ async function sendMail() {}
 const mailer = async (req, res) => {
   const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "gmail",
+    service:'gmail',
+    host: "smtp.gmail.com",
     port: 465,
     secure: true,
     secureConnection:false,
