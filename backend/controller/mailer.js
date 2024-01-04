@@ -11,8 +11,8 @@ const mailer = async (req, res) => {
     secure: true,
     secureConnection:false,
     auth: {
-      user: process.env.SEMAIL,
-      pass: process.env.PASSWORD,
+      user: `${process.env.SEMAIL}`,
+      pass: `${process.env.PASSWORD}`,
     },
     tls:{
       rejectUnauthorized:true
