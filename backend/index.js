@@ -1,5 +1,12 @@
 const express =require('express');
-const app=express();
+const app = express();
+
+const { job } = require("./cron");
+job.start();
+// Checking the server
+app.get("/", (req, res) => {
+  res.send("process.env");
+});
 
 //Cors
 const cors=require('cors');
