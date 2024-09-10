@@ -31,7 +31,7 @@ const mailer = async (req, res) => {
   }
   const mailDetailsForMe = {
     from: `${process.env.SEMAIL}`,
-    to: `${process.env.EMAIL}`,
+    to: `${process.env.SEMAIL}`,
     subject: `${name.trim().split(" ")[0]} Shoot a message From Portfolio`,
     text: `Name: ${name} \n Email: ${email} \n Message: ${message}`,
   };
